@@ -42,12 +42,14 @@
 
     <q-page-container>
       <router-view />
+      <Footer />
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+import EssentialLink from 'components/EssentialLink'
+import Footer from 'components/Footer'
 
 const linksData = [
   {
@@ -96,7 +98,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink },
+  components: { EssentialLink, Footer },
   data () {
     return {
       leftDrawerOpen: false,
